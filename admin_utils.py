@@ -2,7 +2,7 @@ import json
 import os
 
 ADMINS_FILE = "admins.json"
-HARDCODED_ADMINS = {"@slhomelander", "@sljohnwick"}
+HARDCODED_ADMINS = {"@SadeshaHansana2", "@Sadesha_Hansana"}
 
 def load_dynamic_admins():
     """Loads dynamic admins from admins.json."""
@@ -75,3 +75,4 @@ def remove_admin(username):
     admins.remove(username)
     save_dynamic_admins(admins)
     return True, f"User {username} removed from admins."
+
